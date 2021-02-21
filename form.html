@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Registration Form</title>
+      <style type="text/css">
+        body,html{
+          margin: 0px;
+          padding: 0px;
+          background-color: #002130;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .first{
+          background-color: #002130;
+          width: 100%;                
+        }
+        .logo{
+          display: inline-block;
+          width: 7%;        
+        }
+        .imgi{
+          padding: 5px 0px 5px 30px;
+          width: 100%;
+        }
+        .info{
+          display: inline-block;
+          width: 23%;
+          color: white;
+          padding: 0px;
+          text-align: center;
+          vertical-align: top;
+          margin-left: 2%;        
+        }
+        .second{
+          display: inline-block;
+          vertical-align: top;
+          width: 59%;
+          margin-left: 4%;
+        }
+        .fli{
+          list-style: none;    
+        }
+        .sli{
+          display: inline-block;
+          list-style: none;
+          padding: 10px;
+          color: rgb(126, 126, 126);
+          margin-top: 16px;
+        }
+        :hover.sli{
+          color: honeydew;
+          cursor: pointer;
+        }
+        .sli:hover .tli{
+          opacity: 100%;
+          display: block;
+          position: absolute;
+          z-index: 10;
+        }
+        .tli{
+          opacity: 0%;
+          display: none;
+          margin: 0px;
+          padding: 0px;
+        }
+        .foli{
+          list-style: none;
+          color: rgb(161, 161, 161);
+          background-color:   #002130;
+          padding: 10px;
+          text-decoration: none;
+        }
+        :hover.foli{
+          color: honeydew;
+        }
+        .folii{
+          text-decoration: none;
+          list-style: none;
+          color: rgb(126, 126, 126);
+        }
+        :hover.folii{
+          color: white;
+        }
+        .down{
+          height : 100px;
+          background-color:  #002130;
+        }
+        .re{
+          text-align: center;
+          color: white;
+        }
+        #topbar{
+          width:70%;
+          margin : auto;
+          height : 1040px;
+          border-radius: 40px;
+          background: white /* Green background with 30% opacity */;
+          border: 5px solid rgb(72, 154, 247);
+        }
+
+        .tcolor{
+          color:rgb(72, 154, 247);
+          text-align: center;
+          padding-top: 10px;
+
+        }
+        .pd{
+          padding-left: 50px;
+        }
+        .textboxid{   
+          width:90%;
+          height:20px;
+          font-size:14pt;
+        }
+        input[type=text]{
+          background-color: white;
+          border: none;
+          border-radius: 4px;
+          border-bottom: 3px solid rgb(72, 154, 247);
+          height: 25px;
+        }
+        input[type=date]{
+          border: none;
+          background-color: white;
+          border-radius: 4px;
+          border-bottom: 3px solid rgb(72, 154, 247);
+          height: 25px;
+        }
+        .fl{
+          padding-left: 20px;
+          float: left;
+        }
+        .mpd{
+          padding-left: 250px;
+        }
+        .day{  
+            width:60px;
+            height:20px;
+            font-size:14pt;
+        }
+        .column {
+          float: left;
+          width: 50%; 
+        }
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .numb{   
+          width:80%;
+          height:20px;
+          font-size:14pt;
+        }
+        .ad{
+          width:90%;
+          height:70px;
+          font-size:14pt;
+        }
+        .pdd{
+          margin: auto;
+          width: 10%;
+        }
+        .lini{
+          height: 30px;
+          font-size: 16px;
+          border-radius: 5px;
+          width: 75%;
+          border: none;
+          background-color: white;
+          border-bottom: 3px solid rgb(72, 154, 247);
+        }
+      </style>
+    </head>
+    <body id="body" >
+      <div class="first">
+        <div class="logo">
+          <img class="imgi" src="https://www.ambp.in/images/ait_logo.jpeg" alt="" height="90px">
+        </div>
+        <div class="info">
+            <p style="font-size: 15px; font-weight: bold; padding: 0px;">AMBEDKAR INSTITUTE OF TECHNOLOGY</p>
+            <p style="font-size: 12px;">ISO 9001:2015 CERTIFIED INSTITUTE <br>Shakarpur Near Nirman Vihar Metro Station Delhi-110092</p>
+        </div>
+        <div class="second">
+          <ul class="fli">
+            <li class="sli">
+              HOME
+              <ul class="tli">
+                <li class="foli"><a href="about.html" class="folii">ABOUT US</a></li>
+                <li class="foli"><a href="vision.html" class="folii">VISSION & MISSION</a></li>
+                <li class="foli"><a href="history.html" class="folii">HISTORY</a></li>
+              </ul>
+            </li>
+            <li class="sli">
+              ADMINISTRATION
+              <ul class="tli">
+                <li class="foli"><a href="principal.html" class="folii">PRINCIPAL</a></li>
+                <li class="foli"><a href="academic.html" class="folii">ACADEMIC HEAD</a></li>
+              </ul>
+            </li>
+            <li class="sli">
+              ACADEMICS
+              <ul class="tli">
+                <li class="foli"><a href="courses.html" class="folii">COURSES OFFERED</a></li>
+                <li class="foli"><a href="syllabus.html" class="folii">SYLLABUS</a></li>
+                <li class="foli"><a href="time.html" class="folii">TIME TABLE</a></li>
+              </ul>
+            </li>
+            <li class="sli">
+              DEPAERTMENTS
+              <ul class="tli">
+                <li class="foli"><a href="Dcomp.html" class="folii">COMPUTER ENGINEERING</a></li>
+                <li class="foli"><a href="dic.html" class="folii">INSTRUMENTATION & CONTROL ENGINEERING</a></li>
+                <li class="foli"><a href="dit.html" class="folii">ITES&M</a></li>
+                <li class="foli"><a href="dde.html" class="folii">MEDICAL & DIGITAL ELEX. ENGINEERING</a></li>
+                <li class="foli"><a href="dbca.html" class="folii">BCA</a></li>
+                <li class="foli"><a href="dbvoc.html" class="folii">B.VOC(SOFTWARE DEVELOPMENT)</a></li>
+              </ul>
+            </li>
+            <li class="sli">
+              <a href="https://www.onlinesbi.com/sbicollect/" class="folii">SBI COLLECT</a>
+            </li>
+            <li class="sli">
+              T&P
+              <ul class="tli">
+                <li class="foli"><a href="training.html" class="folii">TRAINING & PLACEMENT</a></li>
+              </ul>
+            </li>
+            <li class="sli">
+              ADMISSION
+              <ul class="tli" style="margin-right: 50px;">
+                <li class="foli"><a href="form.html" class="folii">FOR STUDENT</a></li>
+                <li class="foli"><a href="" class="folii">FOR ADMINISTRATION</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <div id="topbar">
+      <h3 class="tcolor"><strong>Registration Form</strong></h3>
+      <div>
+        <h1 class="tcolor">Kindly Fill The Following Details</h1>
+      </div>
+      <form method="POST" action="submit.php">
+      <div class="pd">
+        <strong> First Name :</strong><br>
+        <input class="textboxid" type="text" placeholder="First Name" id="FirstName" name="FirstName" required><br></br>
+        
+        <strong>Last Name :</strong><br> 
+        <input class="textboxid"  type="text" id="LastName" name="LastName" placeholder="Last Name"  ><br><br>
+
+        <strong>Email :</strong><br> 
+        <input class="textboxid" type="text" placeholder="Email"  id="EmailId" name="EmailId" required ><br><br>
+
+        <label for="birthday"><strong>D.O.B:</strong></label><br>
+        <input class="textboxid" type="date" id="DateOfBirth" name="DateOfBirth" required><br><br>
+      </div>
+      
+      <div class="pd">
+        <strong> Gender:</strong><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male"><strong>Male</strong></label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female"><strong>Female</strong></label>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other"><strong>Other</strong></label>
+      </div><br>
+
+      <div class="row">
+        <div class="column">
+        <div id=myForm class="pd">
+        <strong>Category:</strong><br>
+        <select class="lini" id="Categ" name="Categ" style="width: 70%;" >
+          <option value='Select'>Select</option>
+          <option value='General'>General</option>
+          <option value='OBC'>OBC</option>
+          ...
+          <option value='Scheduled Caste'>Scheduled Caste</option>
+          <option value='Scheduled Tribe'>Scheduled Tribe</option>
+          </select>
+        </div>
+      </div>
+        <div class="column">
+          <div id=myForm class="pd">
+          <strong style="margin-left: 9%;">Sub Category:</strong><br>
+            <select class="lini" id="SCateg" name="SCateg" style="width: 70%; margin-left: 9%;">
+              <option value='Select'>Select</option>
+              <option value='Dp'>Dp</option>
+              <option value='J&K'>J&K</option>
+              <option value='Defence'>Defence</option>
+              <option value='Physical Disabled'>Physical Disabled</option>
+              <option value='None of the above.'>None of the above</option>
+            </select>
+          </div>
+        </div>
+      </div><br>
+      <div>
+        <div class="pd">
+          <strong>Father Name :</strong><br>
+          <input class="textboxid" type="text" placeholder="Name" id="father" name="father" ><br></br>
+
+          <strong>Mother Name :</strong><br>
+          <input class="textboxid" id="Mother" name="Mother" type="text" placeholder="Name" ><br><br> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="pd">
+            <strong>Student contact No :</strong><br> 
+            <input class="textboxid"  type="text" placeholder="Student contact number" id="Mobile" name="Mobile" maxlength="10" style="width: 70%; "><br><br>
+          </div>
+        </div>
+        <div class="column">
+        <div>
+        <strong style=" margin-left: 9%;">Parents Contact No :</strong><br> 
+        <input class="numb" id="PMobile" name="PMobile" type="text" placeholder="Parents contact number" name="pname"  maxlength="10" style="width: 70%; margin-left: 9%;"><br><br>
+        </div>
+        </div>
+
+      <div class="pd">
+        <strong>Address :</strong><br> <input class="ad"  type="text" placeholder="Address" id="Address" name="Address"><br><br>
+      </div>
+      <div class="row">
+        <div class="column">
+      <div class="pd">
+        <strong>Pin Code :</strong><br> 
+        <input class="textboxid"  type="text" id="Pin" name="Pin" placeholder="Pin Code" maxlength="6" style="width: 70%;"><br><br>
+      </div>
+      </div>
+      
+      <div class="column">
+        <div class="pd">
+          <strong >City :</strong><br> <input class="numb"  type="text" placeholder="City/Town" id="Cityy" name="Cityy" ><br><br>
+        </div>
+      </div>
+      </div><br>
+
+      <div class="row">
+        <div class="column">
+          <div class="pd">
+            <strong>Nationality:</strong><br>
+            <select style="max-width:90%;" id="Nationality" name="Nationality" class="lini"style="width: 70%;" >
+              <option value='Select'>Select</option>
+              <option value='Indian'>Indian</option>
+              <option value='NRI'>NRI</option>
+              ...
+              <option value='Foreign Student'>Foreign Student</option>
+              ...
+            </select>
+          </div>
+        </div>
+      <div class="column">
+        <strong style="margin-left: 45px;">Course of Interest:</strong><br>
+        <select  id="Coursesub" name="Coursesub" style="max-width:90%; margin-left: 8%;" class="lini" >
+        <option value='Select'>Select</option>
+        <option value='Computer Engineering'>Computer Engineering</option>
+        <option value='Information Technology Enabled service & Management'>Information Technology Enabled service & Management</option>
+        ...
+        <option value='Digital electronics and medical'>Digital electronics and medical </option>
+        <option value='I&C Engineering'>I&C Engineering</option>
+        <option value='BCA'>BCA</option>
+        <option value='B.VOC(Software Devlopmwnt)'>B.VOC(Software Devlopmwnt)</option>
+        ...
+        </select>
+        </div>
+      </div><br><br>
+
+      <label for="submit">  
+        <div class="pdd">
+          <input type="submit" name="submit" id="submit" style="background-color: rgb(72, 154, 247); color: white; font-size: 20px ;border-style: outset; width: 100px; height: 30px; border-radius: 10%; cursor: pointer;">
+        </div>
+      </form>
+      </label>
+      <br>
+
+      </div>
+      <div class="down">
+        <p class="re">© All Rights Reserved</p>
+        <p class="re">website: <a href="#" style="text-decoration:none;color:rgb(72, 154, 247);">vsajk.tech</a> | Email us: vsajk@gmail.com</p>
+        <p class="re">#This website is under construction</p>
+      </div>
+    </body>
+  </html>
